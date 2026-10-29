@@ -358,6 +358,21 @@ h1 em,h2 em,h3 em,h4 em,.sub-brand em,.about .big em,.tile h3 em,.xp h3 em,.pape
 body::before{background:var(--night)!important}
 .top nav a{color:rgba(246,236,226,.75)!important}
 .top nav a:hover{color:#f6ece2!important}
+
+/* footer, opgeruimd */
+footer{padding-block:72px 28px!important}
+.f-top{display:flex;justify-content:space-between;align-items:center;gap:28px;flex-wrap:wrap;padding-bottom:40px;border-bottom:1px solid rgba(246,236,226,.18)}
+footer .f-logo img{height:30px!important}
+.f-nav{display:flex;gap:28px;flex-wrap:wrap}
+.f-nav a{font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:rgba(246,236,226,.7);text-decoration:none;transition:color .3s ease}
+.f-nav a:hover{color:#f6ece2}
+.f-mid{display:flex;justify-content:space-between;align-items:baseline;gap:20px;flex-wrap:wrap;padding-block:40px}
+.f-mail{font-size:clamp(20px,2.4vw,30px);color:#f6ece2;text-decoration:none;border-bottom:1px solid rgba(246,236,226,.35);padding-bottom:4px;transition:border-color .3s ease}
+.f-mail:hover{border-color:#f6ece2}
+.f-site{font-size:13px;letter-spacing:.2em;text-transform:uppercase;color:rgba(246,236,226,.6)}
+footer .legal{border-top:1px solid rgba(246,236,226,.18);padding-top:22px;color:rgba(246,236,226,.5)}
+@media (max-width:620px){.f-top{flex-direction:column;align-items:flex-start}.f-nav{gap:14px 20px}}
+footer{border-top:0!important}
 </style>
 <link rel="icon" href="img/trouf-logo.svg" type="image/svg+xml">
 <meta property="og:title" content="TROUF">
@@ -505,10 +520,13 @@ body::before{background:var(--night)!important}
 </div></div></section>
 
 <footer><div class="wrap">
-  <div class="fgrid">
-    <div><a class="logo" href="#top"><img src="img/trouf-logo-licht.svg" alt="TROUF"></a></div>
-    <div><h4>Pagina</h4><ul><li><a href="#over">Over mij</a></li><li><a href="#expertise">Expertise</a></li><li><a href="#events">Events</a></li><li><a href="#realisaties">Realisaties</a></li><li><a href="#talent">Talent</a></li></ul></div>
-    <div><h4>Contact</h4><ul><li><a href="mailto:Nouhaila@troufagency.com">Nouhaila@troufagency.com</a></li><li>troufagency.com</li></ul></div>
+  <div class="f-top">
+    <a class="logo f-logo" href="#top"><img src="img/trouf-logo-licht.svg" alt="TROUF"></a>
+    <nav class="f-nav" aria-label="Footer"><a href="#over">Over mij</a><a href="#expertise">Expertise</a><a href="#events">Events</a><a href="#realisaties">Realisaties</a><a href="#talent">Talent</a><a href="#contact">Contact</a></nav>
+  </div>
+  <div class="f-mid">
+    <a class="f-mail" href="mailto:Nouhaila@troufagency.com">Nouhaila@troufagency.com</a>
+    <span class="f-site">troufagency.com</span>
   </div>
   <div class="legal"><span>TROUF · BE1040969950</span><span>© 2026 TROUF</span></div>
 </div></footer>
