@@ -492,6 +492,53 @@ footer .legal{margin-top:0}
 #expertise .xp:hover{background:linear-gradient(#45130e,#45130e) padding-box,url(img/zebra.jpg) center/520px auto border-box!important}
 
 .hero-grid{align-items:start!important}.hero h1.brand{margin:34px 0 26px!important}.hero h1.brand img{margin-left:-1.2%!important}
+/* FX: typemachine, flipkaarten, handschrift */
+.sub-brand .tw-cur{display:inline-block;width:2px;height:1em;margin-left:3px;vertical-align:-.12em;background:currentColor;animation:twblink .8s steps(1) infinite}
+.sub-brand .tw-cur.done{animation:twblink .8s steps(1) 4 forwards}
+@keyframes twblink{50%{opacity:0}}
+.talent .t-img.flip{background:transparent!important;overflow:visible!important;perspective:1400px;cursor:pointer}
+.talent .t-img.flip::after{display:none!important}
+.flip .t-inner{position:absolute;inset:0;transform-style:preserve-3d;transition:transform .9s cubic-bezier(.3,.7,.2,1);transform:rotateY(180deg)}
+.flip.open .t-inner{transform:rotateY(0)}
+.flip .t-face{position:absolute;inset:0;border-radius:14px;overflow:hidden;backface-visibility:hidden;-webkit-backface-visibility:hidden;background:var(--night)}
+.flip .t-face img{width:100%;height:100%;object-fit:cover;display:block}
+.flip .t-face::after{content:"";position:absolute;inset:9px;border:1px solid rgba(246,236,226,.6);border-radius:10px;pointer-events:none}
+.flip .t-back{transform:rotateY(180deg);box-shadow:0 30px 50px -36px rgba(42,21,17,.6)}
+.flip .t-back .z{position:absolute;inset:12px;border-radius:9px;background:url(img/zebra-kaart.jpg) center/cover}
+.flip .t-back .n{position:absolute;right:12%;top:50%;transform:translateY(-50%);writing-mode:vertical-rl;background:var(--night);color:#f6ece2;font:400 12px "Cutive Mono",monospace;letter-spacing:.26em;white-space:nowrap;text-transform:uppercase;padding:16px 9px;border:1px solid rgba(246,236,226,.45);border-radius:3px}
+.flip .t-back .h{position:absolute;left:0;right:0;bottom:22px;text-align:center;font:400 10.5px "Cutive Mono",monospace;letter-spacing:.28em;text-transform:uppercase;color:#f6ece2;text-shadow:0 1px 6px #1c1613}
+@media (hover:hover){.flip.open:hover .t-inner{transform:rotateY(-8deg) rotateX(3deg)}}
+.script.write{clip-path:inset(-30% 100% -30% -10%)}
+.script.write.go{clip-path:inset(-30% -10% -30% -10%);transition:clip-path 3.6s cubic-bezier(.4,.15,.4,1)}
+.s-sign.write.go{transition-duration:5.5s}
+@media (prefers-reduced-motion:reduce){.flip .t-inner,.script.write.go{transition:none}.sub-brand .tw-cur{display:none}}
+/* zwarte cursor */
+html,body,body *{cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAACnElEQVR4AbSVz4sSYRjHH51ZxSK2vdQGC7tB56UQZCGWxb0YgiYdAg9dlLIg9Rhd0v4Bs1KCBT0mSIcVJSmQILDAkg5ekg4qGJggIRJi/ur7TKzMiK7T7ibvd+Z9nvd5v595Z+YdtfSffxPAeDx2Qd6T5k0AML4BPQPkKaRB/0SaHHBg6EPnJSAizsducsA4nU6TzWajfr9/E4DXkOG4BDlA8spkMmQ2m7Xdbnd3OBy+B+SsNHDEgxygwU+yyefztLW1JbTb7cuDwaAAyAVp4AgHOUAxvVQqkdFoFBuNxkWs5DMglxQFKoO5AJ5frVYlSLlcPgfIJ0CucP5fdCiAjZrNJt8usVAonBmNRnlAzJxXq4UANup0OvzghWw2qwfgLcR7hocWShWAXXq9Htntdm0ymRQQvwLkNs4Lm2oAO+EWkdPp1EQiEd7pe4A84vxhUgDYYFbx0tIS+f1+CgaDFAgEqNVqUa1W49LHgDznzjwpAChW1G1sbEjx5uYmhcNhyZwBrPX1dWkMc3jX66RgxkEBONhoWq2WYrEYVSoV2tnZoWKxSNgXA5jto0bRUHseid8zvKWUAsAZg8FAqVRq5HK5OCSfj799RKFQSITRdUD+Xro0uvggB4xXVlYol8sNrVZrD1N3oQcOh4PW1tYokUgQPh0j5O5DqpscoNne3iaTydTBsq/iat/B5QXU83q9xK9pNBoVsKPvYRWnkFfV5IBf+LB9FwTBBPMvPBtnhu15PJ6hXq8nAAjw0xi7BalqcsBdURSNMP02NfPJ8vKy4Ha7yWKxUL1eH+N1vjNVMzecAGD8E/oxXYlcBbdkn68+Ho/T6urqR6xC9X/3BDBtLI8BeYg4DV3T6XT8fD6gr6qpBXwFxA69UeUqK/oDAAD//0gBSLwAAAAGSURBVAMAuJIEQIKD5REAAAAASUVORK5CYII=) 3 2,auto}@supports (cursor:-webkit-image-set(url(x.png) 1x)){html,body,body *{cursor:-webkit-image-set(url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAACnElEQVR4AbSVz4sSYRjHH51ZxSK2vdQGC7tB56UQZCGWxb0YgiYdAg9dlLIg9Rhd0v4Bs1KCBT0mSIcVJSmQILDAkg5ekg4qGJggIRJi/ur7TKzMiK7T7ibvd+Z9nvd5v595Z+YdtfSffxPAeDx2Qd6T5k0AML4BPQPkKaRB/0SaHHBg6EPnJSAizsducsA4nU6TzWajfr9/E4DXkOG4BDlA8spkMmQ2m7Xdbnd3OBy+B+SsNHDEgxygwU+yyefztLW1JbTb7cuDwaAAyAVp4AgHOUAxvVQqkdFoFBuNxkWs5DMglxQFKoO5AJ5frVYlSLlcPgfIJ0CucP5fdCiAjZrNJt8usVAonBmNRnlAzJxXq4UANup0OvzghWw2qwfgLcR7hocWShWAXXq9Htntdm0ymRQQvwLkNs4Lm2oAO+EWkdPp1EQiEd7pe4A84vxhUgDYYFbx0tIS+f1+CgaDFAgEqNVqUa1W49LHgDznzjwpAChW1G1sbEjx5uYmhcNhyZwBrPX1dWkMc3jX66RgxkEBONhoWq2WYrEYVSoV2tnZoWKxSNgXA5jto0bRUHseid8zvKWUAsAZg8FAqVRq5HK5OCSfj799RKFQSITRdUD+Xro0uvggB4xXVlYol8sNrVZrD1N3oQcOh4PW1tYokUgQPh0j5O5DqpscoNne3iaTydTBsq/iat/B5QXU83q9xK9pNBoVsKPvYRWnkFfV5IBf+LB9FwTBBPMvPBtnhu15PJ6hXq8nAAjw0xi7BalqcsBdURSNMP02NfPJ8vKy4Ha7yWKxUL1eH+N1vjNVMzecAGD8E/oxXYlcBbdkn68+Ho/T6urqR6xC9X/3BDBtLI8BeYg4DV3T6XT8fD6gr6qpBXwFxA69UeUqK/oDAAD//0gBSLwAAAAGSURBVAMAuJIEQIKD5REAAAAASUVORK5CYII=) 1x,url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAFTElEQVR4AdxYXUhlVRReVyMxShQdJcymSMkHx3xJzEANrMBKJR9KhQr8eXBSNCGielCiQOZFUQnSh5kSEymlhCL/JzFDHzL0QV9Ewyct1BRU0Oz7ztx97rn3nnHuz756Zy7r22utvffZe313n7PP2idC7vPfg0ng7OzsFeCF+2FxvFYAgRci8F+A32B/Ch3W4kUA0T4DKPkMJL5STjhqOwKecdaAxPfAQ54N4eD7QoBxvoliFCQegQ4rsSPwn4pwcHBQjo6OlPsSjGmQiIcOG7Ej4FDRjY+PS15enuzu7qqq52H8DhJPQIeF2BFwC2xhYUFycnJka2tL1afCmAeJZ6EvXewImCvgcNwxV1dXJTs7W9bX11XAj8PgSnBFYF6e2BGwjWZjY8MgsbS0pNpjYdzGSrwMfWniMwFGuL29Lbm5uTI/P0+XiEbxE0i8BX0p4hcBRnhwcCD5+fkyOjpKl+D74VuQuE7nouE3AQbIrbWoqEgGBgboEnxYukDiczoXiYAIMMDT01MpLy+Xnp4eugofg8RNgIRUXUh1wARUVLW1tdLS0qJc6ndR/AgSD0OHXIImwAhbW1ulpqZGEDRd4nUUk/AfhQ6paCHACHt7e6WsrExOTk7oEi+iYEp+BTpkoo0AIxweHhY+3IeHh3SJayj41r4KHRLRSoARjo2NGdvs/v4+XeIpFCSRAa1d/CDg+9zMn/jCs+RPibiat1MutFYJCQFGuLy8bKQelvzpMdTzwX4NWpuEjAAjVPnTysoKXSIKBbfYd6C1SEgJMELmT0zHLfkT57yFLfZDtgcLDhbsGPe8fm9vz3iwLfkTr2kDiU4aweBCCDBAlT8NDQ3RVXgfJJgIRqoKf7UdAfNMjMH9Gi89PV24jU5PT8u0DSYmJiQhIcFzzLdR8R0QkNgRCGggXlRdXS2FhYXG7cKU2w48Y7OvB0rxZz3pUeeTa0fgTF2JQZXppuPj46W7u1uqqqrc6hcXF918P5yvHQ7HX370N7vaETBTYQxqdlRGcnKyzM3NSV1dnTD/yczMVE3S19cn3HXMCpFrGMMXYQZrucx3047AXa9OTU01gk9LSzP7NDY2mjaNrq4uKoUmZYRK2xEw6/DXmfNmZGTI7OyspKSkmHU0KioqJC4ujqaBzs5OOT4+NmwUlbgNXY2o0C1msJaBvXYhvohmZmYkMTFRdfsDxpeAREVFSX19PU0DOzs70t/fb9go+OZ1NaJCt9gRMJ8BTlZQUCCTk5MSGxtLl+AniTwYPIYZyT+fh8hI11be1taGZlOuYxVcjWa1HsOOgLkCpaWlMjU1JdHR/HpiTPgzygLcWgcAP9V9A1+SkpKksrKSpgF+CCNpwxHhsrkanZW6lB0B89/i4cQyEV+hbyBw87SCtg7AkKYm9+e1vb3dqHcWHzi1dmVHwG6SWwi8DDi1NsL/E/5tQLKysowXGG1iZGRE1tbWaBLP4TbKp6EbvhDoQqDvnTOx+Vd7bqkeq+C+ROcM6E+THYFlywCfIPh77SI/oP8mIMXFxcIXHW2CLzrL0bIYq/A063XCiwACnsUErwL5sL+APlfQh6nHDXaKiIiQ5uZmmgZ4uLc8zNzdtH9+9CLAmRHUKPArbR9xE/0OACM/YsbZ0NAgm5ubUlJSwmoF7Qd7WwJqNl81yP6Lvr2AxMTEyDa+Ynd0dLjdTmj7G/gI0CpaCDgjutvpijtVLUheAQJOV51zeCltBBAc98xBywz8dM2XXhba3L4AW/oEbWoj4IykDpqH9asIuhww3hGoC5loJYCA/wFuAAEdTgJhqZVAIAEEe83/AAAA//8PFHcjAAAABklEQVQDAAm4qHA2/MyRAAAAAElFTkSuQmCC) 2x) 3 2,auto}}a,a *,button,button *,summary,summary *,.flip,.flip *,[role=button],[role=button] *{cursor:pointer!important}input,textarea{cursor:text!important}
+/* expertise: rustig, zebra bij hover */
+#expertise .xp,#expertise .xp:hover{border:1px solid rgba(246,236,226,.3)!important;background:#3d0f0b!important;transform:none!important;box-shadow:none!important}
+#expertise .xp::after{display:none!important}
+#expertise .xp::before{display:block!important;content:""!important;position:absolute!important;inset:-1px!important;left:-1px!important;top:-1px!important;width:auto!important;height:auto!important;border-radius:inherit;padding:7px;background:url(img/zebra.jpg) center/520px auto!important;-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask:linear-gradient(#000 0 0) content-box exclude,linear-gradient(#000 0 0);opacity:0;transition:opacity .45s ease!important;pointer-events:none;z-index:1}
+#expertise .xp:hover::before,#expertise .xp:focus-within::before{opacity:1}
+.legal a{color:inherit;text-decoration:none;border-bottom:1px solid rgba(246,236,226,.3)}.legal a:hover{color:#f6ece2}
+/* mobiel menu */
+.top .menu{display:contents}
+.top .burger{display:none}
+@media (max-width:760px){
+.top .wrap{position:static}
+.top nav{display:flex!important;align-items:center;gap:14px}
+.top .lang{margin-left:0!important}
+.top .burger{display:flex;flex-direction:column;justify-content:center;gap:5px;width:40px;height:40px;margin-right:-8px;padding:0 9px;background:none;border:0;cursor:pointer;-webkit-tap-highlight-color:transparent}
+.top .burger span{display:block;height:1.5px;background:#f6ece2;border-radius:2px;transition:transform .35s ease,opacity .25s ease}
+.top.open .burger span:nth-child(1){transform:translateY(6.5px) rotate(45deg)}
+.top.open .burger span:nth-child(2){opacity:0}
+.top.open .burger span:nth-child(3){transform:translateY(-6.5px) rotate(-45deg)}
+.top .menu{display:flex;flex-direction:column;position:absolute;left:0;right:0;top:100%;background:#3d0f0b;padding:6px 20px 26px;border-top:1px solid rgba(246,236,226,.14);box-shadow:0 30px 40px -30px rgba(28,22,19,.7);visibility:hidden;opacity:0;transform:translateY(-8px);transition:opacity .3s ease,transform .3s ease,visibility 0s .3s}
+.top.open .menu{visibility:visible;opacity:1;transform:none;transition:opacity .3s ease,transform .3s ease}
+.top .menu a{display:block!important;padding:17px 0;border-bottom:1px solid rgba(246,236,226,.12);font:400 13px "Cutive Mono",monospace!important;letter-spacing:.24em;text-transform:uppercase;color:#f6ece2!important;text-decoration:none}
+}
+@media (max-width:760px){.hero .ctas{flex-wrap:nowrap!important;gap:10px!important}.hero .ctas .btn{flex:1 1 auto;justify-content:center;text-align:center;white-space:nowrap;padding:15px 10px!important;font-size:10.5px!important;letter-spacing:.12em!important;min-width:0}}
+@media (max-width:360px){.hero .ctas{gap:8px!important}.hero .ctas .btn{font-size:9.5px!important;letter-spacing:.08em!important;padding:14px 8px!important}}
+@media (max-width:980px){.about>div:first-child{order:2;margin-top:28px}.about>div:last-child{order:1}}
 </style>
 <link rel="icon" href="img/trouf-logo.svg" type="image/svg+xml">
 <meta property="og:title" content="TROUF">
@@ -621,7 +668,7 @@ footer .legal{margin-top:0}
     <div class="f-brand"><a class="logo f-logo" href="#top"><img src="img/trouf-logo-licht.svg" alt="TROUF"></a><a class="f-mail" href="mailto:Nouhaila@troufagency.com">Nouhaila@troufagency.com</a></div>
     <nav class="f-nav" aria-label="Footer"><a href="#over">Over mij</a><a href="#expertise">Expertise</a><a href="#events">Events</a><a href="#talent">Talent</a><a href="#contact">Contact</a></nav>
   </div>
-  <div class="legal"><span>TROUF · BE1040969950</span><span>© 2026 TROUF</span></div>
+  <div class="legal"><span>TROUF · Nouhaila Matrouf · BE1040969950</span><span><a href="voorwaarden.html">Algemene voorwaarden &amp; privacy</a> · © 2026 TROUF</span></div>
 </div></footer>
 
 <script>
@@ -642,6 +689,76 @@ document.querySelectorAll('.slides').forEach(function(box,b){
   box.addEventListener('touchend',function(e){ if(x0===null) return; var dx=e.changedTouches[0].clientX-x0; if(Math.abs(dx)>40){show(i+(dx<0?1:-1));start()} x0=null; });
   setTimeout(start, b*1900);
 });
+</script>
+
+<script>
+(function(){
+  var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  /* 1 typemachine */
+  var sb=document.querySelector('.sub-brand');
+  if(sb&&!reduce){
+    var html=sb.innerHTML,txt=sb.textContent,i=0;
+    sb.style.minHeight=sb.offsetHeight+'px';
+    sb.innerHTML='<span class="tw-t"></span><span class="tw-cur"></span>';
+    var t=sb.querySelector('.tw-t'),c=sb.querySelector('.tw-cur');
+    setTimeout(function step(){
+      t.textContent=txt.slice(0,++i);
+      if(i<txt.length){setTimeout(step,txt[i-1]===' '?160:85+Math.random()*90)}
+      else{c.classList.add('done');setTimeout(function(){sb.innerHTML=html},3400)}
+    },1100);
+  }
+  /* 3 talentkaarten */
+  var lang=/Ik help/.test((document.querySelector('.hero .lead')||{}).textContent||'')?'nl':'en';
+  var hint=lang==='en'?'Tap to flip':'Tik om te draaien';
+  var cards=[].slice.call(document.querySelectorAll('.talent .t-img'));
+  cards.forEach(function(el){
+    var img=el.querySelector('img');if(!img)return;
+    var name=(el.parentNode.querySelector('h3')||{}).textContent||'';
+    el.classList.add('flip');
+    el.setAttribute('role','button');el.setAttribute('tabindex','0');
+    var inner=document.createElement('div');inner.className='t-inner';
+    var front=document.createElement('div');front.className='t-face t-front';front.appendChild(img);
+    var back=document.createElement('div');back.className='t-face t-back';
+    back.innerHTML='<div class="z"></div><span class="n"></span><span class="h"></span>';
+    back.querySelector('.n').textContent=name;back.querySelector('.h').textContent=hint;
+    inner.appendChild(back);inner.appendChild(front);el.appendChild(inner);
+    function tog(){el.classList.toggle('open')}
+    el.addEventListener('click',tog);
+    el.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();tog()}});
+  });
+  /* 4 handschrift */
+  var scripts=[].slice.call(document.querySelectorAll('.script'));
+  if(!reduce)scripts.forEach(function(s){s.classList.add('write')});
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){
+      if(!e.isIntersecting)return;var el=e.target;io.unobserve(el);
+      if(el.classList.contains('roster')){
+        el.querySelectorAll('.flip').forEach(function(f,k){setTimeout(function(){f.classList.add('open')},reduce?0:450+k*320)});
+      }else{var s=el.__script;setTimeout(function(){s.classList.add('go')},250)}
+    })},{threshold:.3});
+    var io2=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){io2.unobserve(e.target);e.target.__script.classList.add('go')}})},{threshold:0});
+    scripts.forEach(function(s){var w=s.parentElement;w.__script=s;if(s.classList.contains('s-sign')){var c=s.closest('section')||w;c.__script=s;io2.observe(c)}else io.observe(w)});
+    var r=document.querySelector('.roster');if(r)io.observe(r);
+  }else{scripts.forEach(function(s){s.classList.add('go')});cards.forEach(function(f){f.classList.add('open')})}
+})();
+</script>
+
+<script>
+(function(){
+  var top=document.querySelector('.top'),nav=top&&top.querySelector('nav');if(!nav||nav.querySelector('.menu'))return;
+  var menu=document.createElement('div');menu.className='menu';menu.id='menu';
+  [].slice.call(nav.children).forEach(function(c){if(c.tagName==='A')menu.appendChild(c)});
+  nav.insertBefore(menu,nav.firstChild);
+  var en=/^en/.test(document.documentElement.lang)&&!/Ik help/.test(document.body.textContent);
+  var b=document.createElement('button');b.className='burger';b.type='button';
+  b.setAttribute('aria-label',en?'Menu':'Menu');b.setAttribute('aria-expanded','false');b.setAttribute('aria-controls','menu');
+  b.innerHTML='<span></span><span></span><span></span>';nav.appendChild(b);
+  function set(o){top.classList.toggle('open',o);b.setAttribute('aria-expanded',o?'true':'false')}
+  b.addEventListener('click',function(e){e.stopPropagation();set(!top.classList.contains('open'))});
+  menu.addEventListener('click',function(e){if(e.target.closest('a'))set(false)});
+  document.addEventListener('click',function(e){if(!top.contains(e.target))set(false)});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape')set(false)});
+})();
 </script>
 
 </body>

@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Terms &amp; conditions and privacy · TROUF</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="index,follow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Cutive+Mono&display=swap">
+<style>/* mobiel menu */
+.top .menu{display:contents}
+.top .burger{display:none}
+@media (max-width:760px){
+.top .wrap{position:static}
+.top nav{display:flex!important;align-items:center;gap:14px}
+.top .lang{margin-left:0!important}
+.top .burger{display:flex;flex-direction:column;justify-content:center;gap:5px;width:40px;height:40px;margin-right:-8px;padding:0 9px;background:none;border:0;cursor:pointer;-webkit-tap-highlight-color:transparent}
+.top .burger span{display:block;height:1.5px;background:#f6ece2;border-radius:2px;transition:transform .35s ease,opacity .25s ease}
+.top.open .burger span:nth-child(1){transform:translateY(6.5px) rotate(45deg)}
+.top.open .burger span:nth-child(2){opacity:0}
+.top.open .burger span:nth-child(3){transform:translateY(-6.5px) rotate(-45deg)}
+.top .menu{display:flex;flex-direction:column;position:absolute;left:0;right:0;top:100%;background:#3d0f0b;padding:6px 20px 26px;border-top:1px solid rgba(246,236,226,.14);box-shadow:0 30px 40px -30px rgba(28,22,19,.7);visibility:hidden;opacity:0;transform:translateY(-8px);transition:opacity .3s ease,transform .3s ease,visibility 0s .3s}
+.top.open .menu{visibility:visible;opacity:1;transform:none;transition:opacity .3s ease,transform .3s ease}
+.top .menu a{display:block!important;padding:17px 0;border-bottom:1px solid rgba(246,236,226,.12);font:400 13px "Cutive Mono",monospace!important;letter-spacing:.24em;text-transform:uppercase;color:#f6ece2!important;text-decoration:none}
+}
+
+:root{--bg:#eee7da;--paper:#f6f1e8;--ink:#2a1511;--muted:#6c5850;--night:#3d0f0b;--cherry:#651a15;--umber:#8a3226;--cream:#f6ece2;--line:rgba(42,21,17,.16)}
+*{box-sizing:border-box}html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.7 "Courier Prime","Courier New",monospace}
+a{color:inherit}
+.wrap{width:min(1160px,100% - 32px);margin-inline:auto}
+.top{position:sticky;top:0;z-index:20;background:var(--night)}
+.top .wrap{display:flex;justify-content:space-between;align-items:center;gap:16px;padding-block:18px}
+.top .logo img{height:20px;display:block}
+.top nav{display:flex;align-items:center;gap:26px;font:400 13px "Courier Prime",monospace}
+.top nav a{text-decoration:none;color:rgba(246,236,226,.75)}.top nav a:hover{color:var(--cream)}
+.top .lang{display:flex;gap:10px;margin-left:30px;font:400 12px "Cutive Mono",monospace;letter-spacing:.2em}
+.top .lang a[aria-current]{color:var(--cream);border-bottom:1px solid var(--cream)}
+.lbl{font:400 12px "Cutive Mono",monospace;letter-spacing:.24em;text-transform:uppercase;color:var(--umber);display:block;padding-bottom:16px;border-bottom:1px solid var(--umber)}
+header.hd{padding:72px 0 40px}
+header.hd h1{font:400 clamp(34px,4.6vw,58px)/1.08 "Courier Prime",monospace;letter-spacing:-.02em;color:var(--cherry);margin:34px 0 16px}
+header.hd .ver{font:400 12px "Cutive Mono",monospace;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+header.hd p{max-width:36em;margin:22px 0 0}
+.layout{display:grid;grid-template-columns:250px 1fr;gap:64px;padding-bottom:96px}
+.toc{position:sticky;top:90px;align-self:start;font-size:13.5px;line-height:1.5}
+.toc b{display:block;font:400 11px "Cutive Mono",monospace;letter-spacing:.24em;text-transform:uppercase;color:var(--umber);margin-bottom:14px}
+.toc a{display:block;text-decoration:none;color:var(--muted);padding:5px 0;border-top:1px solid var(--line)}
+.toc a:hover{color:var(--cherry)}
+.toc a.big{color:var(--ink);margin-top:14px}
+.doc h2{font:400 clamp(26px,3vw,36px)/1.15 "Courier Prime",monospace;color:var(--cherry);letter-spacing:-.02em;margin:0 0 8px}
+.doc .part{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:48px clamp(22px,4vw,56px);margin-bottom:40px}
+.doc .part .ver{font:400 11px "Cutive Mono",monospace;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+.art{padding-top:30px;margin-top:30px;border-top:1px solid var(--line);scroll-margin-top:90px}
+.art h3{font:700 17px/1.35 "Courier Prime",monospace;margin:0 0 12px;color:var(--ink)}
+.art h3 span{font:400 11px "Cutive Mono",monospace;letter-spacing:.22em;text-transform:uppercase;color:var(--umber);display:block;margin-bottom:6px}
+.art ol{margin:0;padding-left:0;list-style:none;counter-reset:n}
+.art ol li{counter-increment:n;position:relative;padding-left:3.2em;margin:0 0 10px;font-size:15px}
+.art ol li::before{content:var(--a) "." counter(n);position:absolute;left:0;top:0;color:var(--umber);font-size:13px;padding-top:2px}
+.art ul{margin:0;padding-left:1.2em;font-size:15px}.art ul li{margin-bottom:8px}
+.art p{margin:0 0 10px;font-size:15px}
+.art a{color:var(--cherry)}
+.doc,.hd,footer{overflow-wrap:anywhere}
+@media (max-width:820px){.art ol li{padding-left:2.6em}}
+footer{background:var(--night);color:rgba(246,236,226,.7);padding:44px 0 34px;font-size:13px}
+footer .row{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+footer a{color:var(--cream);text-decoration:none}
+footer img{height:18px;display:block;margin-bottom:14px}
+@media (max-width:820px){.layout{grid-template-columns:1fr;gap:28px}.toc{position:static}.top .lang{margin-left:0}header.hd{padding-top:48px}}
+@media print{.top,.toc,footer{display:none}.layout{display:block}.doc .part{border:0;padding:0}}
+</style>
+</head>
+<body>
+<div class="top"><div class="wrap"><a class="logo" href="en.html"><img src="img/trouf-logo-licht.svg" alt="TROUF"></a><nav><a href="en.html#over">About</a><a href="en.html#expertise">Expertise</a><a href="en.html#events">Events</a><a href="en.html#talent">Talent</a><a href="en.html#contact">Contact</a><span class="lang"><a href="voorwaarden.html">NL</a><a href="terms.html" aria-current="page">EN</a></span></nav></div></div>
+<div class="wrap">
+<header class="hd"><span class="lbl">Legal</span><h1>Terms and conditions &amp; privacy statement</h1><div class="ver">Version 1 · 29 October 2026</div><p>Clear agreements make for good collaborations. Below you can read how TROUF works and how your data is handled.</p></header>
+<div class="layout">
+<nav class="toc" aria-label="Contents"><b>Contents</b><a class="big" href="#voorwaarden">Terms and conditions</a><a href="#av1">1. Who we are</a><a href="#av2">2. Scope</a><a href="#av3">3. Quotes and agreement</a><a href="#av4">4. Performance</a><a href="#av5">5. Working with talent</a><a href="#av6">6. Prices and payment</a><a href="#av7">7. Changes and cancellation</a><a href="#av8">8. Intellectual property</a><a href="#av9">9. Confidentiality</a><a href="#av10">10. Liability</a><a href="#av11">11. Force majeure</a><a href="#av12">12. Personal data</a><a href="#av13">13. Governing law and disputes</a><a href="#av14">14. Final provisions</a><a class="big" href="#privacy">Privacy statement</a><a href="#pv1">1. Who is responsible</a><a href="#pv2">2. This website</a><a href="#pv3">3. When you get in touch or work together</a><a href="#pv4">4. Who data is shared with</a><a href="#pv5">5. How long data is kept</a><a href="#pv6">6. Your rights</a><a href="#pv7">7. Changes</a></nav>
+<main class="doc">
+<div class="part" id="voorwaarden"><h2>Terms and conditions</h2><div class="ver">Version 1 · 29 October 2026</div><section class="art" id="av1"><h3><span>Article 1</span>Who we are</h3><p>TROUF is the trade name of Nouhaila Matrouf, a sole trader (eenmanszaak) at Nassaustraat 15, 2000 Antwerp, Belgium. Company and VAT number BE 1040.969.950. Email: <a href="mailto:Nouhaila@troufagency.com">Nouhaila@troufagency.com</a>. In these terms she is called “TROUF”, and the party asking for a quote or giving an assignment is called “the client”.</p></section><section class="art" id="av2"><h3><span>Article 2</span>Scope</h3><ol style="--a:'2'"><li>These terms apply to all quotes, assignments and agreements of TROUF, including talent management, business development, influencer marketing, brand partnerships, creative concepts, social strategy and events.</li><li>By accepting a quote or giving an assignment, the client accepts these terms. The client’s own terms do not apply unless TROUF accepts them in writing.</li><li>Deviations only apply if agreed in writing; an email is enough. If the quote or contract says something different from these terms, the quote or contract prevails.</li></ol></section><section class="art" id="av3"><h3><span>Article 3</span>Quotes and agreement</h3><ol style="--a:'3'"><li>A quote is valid for 30 days unless it states another period.</li><li>The agreement is formed as soon as the client accepts the quote in writing (email included), or as soon as TROUF starts the work at the client’s request.</li><li>A quote is based on the information provided by the client. If that turns out to be incomplete or incorrect, TROUF may adjust price and planning in consultation.</li></ol></section><section class="art" id="av4"><h3><span>Article 4</span>Performance</h3><ol style="--a:'4'"><li>TROUF carries out every assignment carefully and to the best of her ability. This is an obligation of means: TROUF does not guarantee any specific result, such as reach, views, followers, sales or attendance.</li><li>The client provides all information, materials, feedback and approvals on time. Delays on the client’s side may shift the planning and lead to extra costs.</li><li>TROUF may work with third parties such as talents, photographers, venues and suppliers. TROUF selects them carefully but is not liable for their shortcomings, unless caused by her own fault.</li><li>Deadlines are indicative unless expressly agreed as binding.</li></ol></section><section class="art" id="av5"><h3><span>Article 5</span>Working with talent</h3><ol style="--a:'5'"><li>In brand partnerships TROUF acts as the talent’s manager and intermediary, unless agreed otherwise. The specific arrangements (deliverables, planning, feedback rounds, usage rights, exclusivity and fee) are set out in the quote or collaboration agreement.</li><li>The talent creates the content in their own style. Unless agreed otherwise, the brand gets one feedback round on the concept and one on the content.</li><li>The brand only uses the content within the agreed channels, period and scope. Wider use, such as paid ads, whitelisting or use outside social media, requires prior approval and an extra fee.</li><li>Exclusivity only applies if expressly agreed, with a clear product category and duration.</li><li>Commercial content is always clearly identified as advertising, in line with the applicable rules and recommendations for influencer marketing. The client will not ask for anything that goes against them.</li><li>New paid collaborations with talent the client met through TROUF run through TROUF during the assignment and for 12 months after it.</li></ol></section><section class="art" id="av6"><h3><span>Article 6</span>Prices and payment</h3><ol style="--a:'6'"><li>Prices are in euro and exclude VAT. Costs not included in the quote, such as travel, production or venue costs, are charged separately after the client’s approval.</li><li>Invoices are payable within 30 days of the invoice date unless stated otherwise. TROUF may ask for a deposit, especially for events and productions.</li><li>In case of late payment, interest is due by operation of law and without notice of default under the Belgian Act of 2 August 2002 on combating late payment in commercial transactions, plus a fixed compensation of 40 euro for recovery costs. TROUF keeps the right to reasonable compensation for higher recovery costs.</li><li>If an invoice remains unpaid, TROUF may suspend further work after written notice.</li><li>Comments on an invoice must be made in writing within 8 days of receipt.</li></ol></section><section class="art" id="av7"><h3><span>Article 7</span>Changes and cancellation</h3><ol style="--a:'7'"><li>Changes after acceptance are made in consultation and may affect planning and price.</li><li>If the client cancels an assignment in whole or in part, the client pays for the work already delivered, the costs and commitments to third parties that can no longer be cancelled (such as talent fees, venue and suppliers), and a compensation of 30% of the remaining amount of the assignment.</li><li>For events, the quote may set out specific cancellation periods. Those then prevail.</li></ol></section><section class="art" id="av8"><h3><span>Article 8</span>Intellectual property</h3><ol style="--a:'8'"><li>Concepts, ideas, strategies, presentations and other material by TROUF remain the property of TROUF. After full payment the client receives a right to use them for the agreed purpose. Any other use or passing them on to third parties requires written consent.</li><li>Proposals that do not lead to an assignment remain TROUF’s. The client will not carry them out, directly or through third parties.</li><li>TROUF may show a completed assignment (name, logo and visuals) in her portfolio, presentations and social media, unless confidentiality was agreed or the client asks in writing not to.</li><li>The client guarantees that material it provides, such as logos, images, texts and music, does not infringe third-party rights, and indemnifies TROUF against related claims.</li></ol></section><section class="art" id="av9"><h3><span>Article 9</span>Confidentiality</h3><p>Both parties keep the other party’s confidential information secret, such as prices, contracts, plans and figures. This continues after the assignment ends.</p></section><section class="art" id="av10"><h3><span>Article 10</span>Liability</h3><ol style="--a:'10'"><li>TROUF is only liable for damage caused by her own proven fault.</li><li>Liability is limited to the amount invoiced for the assignment concerned, excluding VAT.</li><li>TROUF is not liable for indirect damage, such as loss of profit, missed opportunities or reputational damage, nor for decisions of platforms (such as algorithms, blocks or outages) or the conduct of third parties.</li><li>Complaints about the work must be reported in writing within 8 days of delivery or of the event.</li><li>These limitations do not apply in case of intent, fraud or gross negligence.</li></ol></section><section class="art" id="av11"><h3><span>Article 11</span>Force majeure</h3><p>If a party cannot meet its obligations because of circumstances beyond its control, such as a talent’s illness, extreme weather, government measures or platform outages, those obligations are suspended. If the force majeure lasts longer than 30 days, either party may end the assignment without compensation. Work already delivered is paid for.</p></section><section class="art" id="av12"><h3><span>Article 12</span>Personal data</h3><p>TROUF processes personal data in line with the privacy statement below.</p></section><section class="art" id="av13"><h3><span>Article 13</span>Governing law and disputes</h3><ol style="--a:'13'"><li>Every agreement is governed by Belgian law.</li><li>In case of a dispute, the parties first try to find a solution together. If that fails, the courts of Antwerp, Antwerp division, have jurisdiction.</li><li>If the client is a consumer, the mandatory rules of consumer law continue to apply in full.</li></ol></section><section class="art" id="av14"><h3><span>Article 14</span>Final provisions</h3><ol style="--a:'14'"><li>If a provision is invalid, the other provisions remain in force. The invalid provision is replaced by a valid one that comes as close as possible to its intent.</li><li>TROUF may change these terms. For an ongoing assignment, the version that applied at acceptance remains in force.</li><li>These terms are a translation of the Dutch “Algemene voorwaarden”. In case of differences, the Dutch version prevails.</li></ol></section></div>
+<div class="part" id="privacy"><h2>Privacy statement</h2><div class="ver">Version 1 · 29 October 2026</div><section class="art" id="pv1"><h3><span>Article 1</span>Who is responsible</h3><p>TROUF is the trade name of Nouhaila Matrouf, a sole trader (eenmanszaak) at Nassaustraat 15, 2000 Antwerp, Belgium. Company and VAT number BE 1040.969.950. Email: <a href="mailto:Nouhaila@troufagency.com">Nouhaila@troufagency.com</a>. She is responsible for processing your personal data. You can always email questions.</p></section><section class="art" id="pv2"><h3><span>Article 2</span>This website</h3><ol style="--a:'2'"><li>This website has no contact form and uses no cookies, analytics or advertising trackers.</li><li>The site is hosted by GitHub Pages (GitHub, Inc.). As with any website, the host processes technical data such as your IP address to display and secure the site.</li><li>Fonts are loaded through Google Fonts, which means Google receives your IP address.</li><li>If you click through to Instagram or TikTok, their privacy policies apply.</li></ol></section><section class="art" id="pv3"><h3><span>Article 3</span>When you get in touch or work together</h3><p>When you email TROUF or work together, TROUF processes your name, contact details, company details, the content of your messages and, where needed, billing details.</p><ul><li>To answer your question, based on TROUF’s legitimate interest.</li><li>To prepare quotes and carry out assignments, based on the agreement.</li><li>For invoicing and accounting, based on a legal obligation.</li><li>For talents: the data needed to manage them and arrange collaborations, based on the agreement.</li></ul></section><section class="art" id="pv4"><h3><span>Article 4</span>Who data is shared with</h3><ol style="--a:'4'"><li>Only with those who need it: service providers such as email, invoicing and accounting software and the accountant, and brands or talents to the extent needed for a collaboration. Your data is never sold.</li><li>Some providers, such as GitHub and Google, may process data outside the European Union. They do so with the safeguards required by privacy law.</li></ol></section><section class="art" id="pv5"><h3><span>Article 5</span>How long data is kept</h3><p>No longer than needed. Invoices and accounting records are kept for as long as accounting and tax law requires. Contact emails that lead nowhere are deleted at the latest 2 years after the last contact.</p></section><section class="art" id="pv6"><h3><span>Article 6</span>Your rights</h3><ol style="--a:'6'"><li>You can access, correct or delete your data, restrict processing, object, and ask for your data to be transferred. Just send an email.</li><li>If you are not satisfied, you can file a complaint with the Belgian Data Protection Authority, Rue de la Presse 35, 1000 Brussels, <a href="https://www.dataprotectionauthority.be" target="_blank" rel="noopener">dataprotectionauthority.be</a>.</li></ol></section><section class="art" id="pv7"><h3><span>Article 7</span>Changes</h3><p>This privacy statement may be updated. The date at the top shows the latest version.</p></section></div>
+</main>
+</div>
+</div>
+<footer><div class="wrap"><img src="img/trouf-logo-licht.svg" alt="TROUF"><div class="row"><span>TROUF · Nouhaila Matrouf · BE1040969950</span><a href="en.html">Back to the site →</a></div></div></footer>
+<script>
+(function(){
+  var top=document.querySelector('.top'),nav=top&&top.querySelector('nav');if(!nav||nav.querySelector('.menu'))return;
+  var menu=document.createElement('div');menu.className='menu';menu.id='menu';
+  [].slice.call(nav.children).forEach(function(c){if(c.tagName==='A')menu.appendChild(c)});
+  nav.insertBefore(menu,nav.firstChild);
+  var en=/^en/.test(document.documentElement.lang)&&!/Ik help/.test(document.body.textContent);
+  var b=document.createElement('button');b.className='burger';b.type='button';
+  b.setAttribute('aria-label',en?'Menu':'Menu');b.setAttribute('aria-expanded','false');b.setAttribute('aria-controls','menu');
+  b.innerHTML='<span></span><span></span><span></span>';nav.appendChild(b);
+  function set(o){top.classList.toggle('open',o);b.setAttribute('aria-expanded',o?'true':'false')}
+  b.addEventListener('click',function(e){e.stopPropagation();set(!top.classList.contains('open'))});
+  menu.addEventListener('click',function(e){if(e.target.closest('a'))set(false)});
+  document.addEventListener('click',function(e){if(!top.contains(e.target))set(false)});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape')set(false)});
+})();
+</script>
+</body>
+</html>
