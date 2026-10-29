@@ -8,7 +8,7 @@
 <meta name="description" content="TROUF. Talent management, influencer marketing, brand partnerships, creatieve concepten en events.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gloock&family=Mrs+Saint+Delafield&family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gloock&family=Courier+Prime:ital,wght@0,400;0,700;1,400&family=Cutive+Mono&family=Mrs+Saint+Delafield&family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;700&display=swap">
 <style>
 /* Layout: licht redactioneel magazine op warm beige. Genummerde secties, cursieve accenten, één doorlopende band,
    rood alleen als accent. Zebra alleen op de kaartrug en bij contact. */
@@ -346,6 +346,25 @@ details > *:not(summary){animation:fade .35s ease}
 
 /* titels: één lettertype, geen cursieve of anders gekleurde woorden */
 h1 em,h2 em,h3 em,h4 em,.sub-brand em,.about .big em,.tile h3 em,.xp h3 em,.paper h2 em,#expertise .xp h3 em{font-family:inherit!important;font-style:normal!important;color:inherit!important;font-size:inherit!important;letter-spacing:inherit!important}
+
+/* experiment: typewriter overal behalve in de titels en het logo */
+:root{--body:"Courier Prime","Courier New",monospace}
+body,p,li,a,span,summary,.btn,nav a,.kicker,.keys,.secnum,.label,.sub,.xp-tag,.xp-copy,.does,.projects span,.focus,.event p,.talent p,.rc li,.rc-sub,.intro-text,.cap,.mail,footer,.legal,.src,.rc-label,.count,.ticker-track{font-family:"Courier Prime","Courier New",monospace!important}
+body{font-size:15px;letter-spacing:-.01em}
+.keys,.secnum,.kicker,.label,.sub,summary,.btn,.rc-label,.src,footer h4{font-family:"Cutive Mono","Courier New",monospace!important;letter-spacing:.14em!important}
+.hero .lead,.about .big,.quote,.xp-n,.event .by,.rc-sub,.focus span,.tagline,.ticker-track{font-family:"Courier Prime","Courier New",monospace!important;font-style:normal!important}
+.hero .lead{font-size:17px;line-height:1.7}
+.quote{font-size:18px;line-height:1.6}
+.ticker-track{font-size:clamp(16px,1.6vw,20px)!important;letter-spacing:.06em}
+.xp-n{font-size:22px!important}
+.mail{font-size:clamp(17px,2vw,22px)!important}
+.script{font-family:"Mrs Saint Delafield",cursive!important}
+h1,h2,h3,h4,.sub-brand,.about .big,.xp h3,.event h3,.talent h3,.rc h3,.tile h3,.plate h2{font-family:"Courier Prime","Courier New",monospace!important;font-weight:400!important;letter-spacing:-.02em!important}
+h2{font-size:clamp(32px,4.4vw,58px)!important;line-height:1.05!important}
+.sub-brand{font-size:clamp(22px,2.4vw,32px)!important}
+.about .big{font-size:clamp(24px,2.6vw,34px)!important;line-height:1.25!important}
+.xp h3,.rc h3{font-size:21px!important;line-height:1.25!important}
+.event h3,.talent h3{font-size:21px!important}
 
 .talent .role{font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--umber);margin:2px 0 8px}
 .talent p:not(.role){max-width:30em;line-height:1.6}
