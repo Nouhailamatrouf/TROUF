@@ -552,6 +552,17 @@ html body .talent h3{font-size:calc(30px * var(--ts))!important;line-height:1.1!
 html body .c-head{font-size:calc(50px * var(--ts))!important;line-height:1.05!important}
 body{--tf:"Gloock",Georgia,serif;--ts:.84}
 @media (max-width:760px){html body .sub-brand{font-size:calc(34px * var(--ts))!important}html body .about .big{font-size:calc(32px * var(--ts))!important}html body .c-head{font-size:calc(38px * var(--ts))!important}}
+
+/* merkenband + werkvoorbeelden */
+.ticker-track{font-family:"Gloock",Georgia,serif!important;font-size:clamp(18px,1.9vw,26px)!important;letter-spacing:.01em!important}
+.reels{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin:18px 0 6px}
+.reel{position:relative;margin:0;border-radius:12px;overflow:hidden;background:#1c1613;aspect-ratio:9/16;cursor:pointer}
+.reel video{width:100%;height:100%;object-fit:cover;display:block}
+.reel figcaption{position:absolute;left:10px;right:10px;bottom:10px;display:flex;justify-content:space-between;align-items:center;font:400 10.5px "Cutive Mono",monospace;letter-spacing:.2em;text-transform:uppercase;color:#f6ece2;text-shadow:0 1px 8px rgba(0,0,0,.7)}
+.reel .snd{width:26px;height:26px;border-radius:50%;background:rgba(28,22,19,.55);display:grid;place-items:center;font-size:12px;letter-spacing:0}
+.reel::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 60%,rgba(20,10,8,.55));pointer-events:none}
+.reel figcaption{z-index:2}
+.reels{grid-template-columns:repeat(4,1fr)!important;gap:8px!important}.reel{border-radius:10px!important}.reel figcaption{left:7px!important;right:7px!important;bottom:7px!important;font-size:8.5px!important;letter-spacing:.12em!important}.reel .snd{width:20px!important;height:20px!important;font-size:10px!important}@media (max-width:760px){.reels{grid-template-columns:repeat(2,1fr)!important}.reel figcaption{font-size:10px!important}}
 </style>
 <link rel="icon" href="img/trouf-logo.svg" type="image/svg+xml">
 <meta property="og:title" content="TROUF">
@@ -579,7 +590,7 @@ body{--tf:"Gloock",Georgia,serif;--ts:.84}
   </div>
 </div></header>
 
-<div class="ticker" aria-hidden="true"><div class="ticker-track"><span>Talent Management</span><i>✦</i><span>Influencer Marketing</span><i>✦</i><span>Brand Partnerships</span><i>✦</i><span>Creative Concepts</span><i>✦</i><span>Events &amp; Experiences</span><i>✦</i><span>Business Development</span><i>✦</i><span>Strategic Partnerships</span><i>✦</i><span>Talent Management</span><i>✦</i><span>Influencer Marketing</span><i>✦</i><span>Brand Partnerships</span><i>✦</i><span>Creative Concepts</span><i>✦</i><span>Events &amp; Experiences</span><i>✦</i><span>Business Development</span><i>✦</i><span>Strategic Partnerships</span><i>✦</i></div></div>
+<div class="ticker" aria-hidden="true"><div class="ticker-track"><span>Takeaway.com</span><i>✦</i><span>Jumbo</span><i>✦</i><span>Skechers</span><i>✦</i><span>WECANDANCE</span><i>✦</i><span>Voodoo Village</span><i>✦</i><span>Yoroi</span><i>✦</i><span>Alline</span><i>✦</i><span>Mobilityl</span><i>✦</i><span>Takeaway.com</span><i>✦</i><span>Jumbo</span><i>✦</i><span>Skechers</span><i>✦</i><span>WECANDANCE</span><i>✦</i><span>Voodoo Village</span><i>✦</i><span>Yoroi</span><i>✦</i><span>Alline</span><i>✦</i><span>Mobilityl</span><i>✦</i></div></div>
 
 <section id="over"><div class="wrap">
   <div class="secnum">Over mij</div>
@@ -620,7 +631,7 @@ body{--tf:"Gloock",Georgia,serif;--ts:.84}
   <p class="xp-tag">Creatieve ideeën en de juiste connecties omzetten in sterke content.</p>
   <details><summary><span>Meer lezen</span></summary>
     <p class="xp-copy">Sterke content begint bij een goed idee, maar werkt pas echt als strategie en creativiteit samenkomen. Ik ontwikkel concepten en socialmediastrategieën vanuit het verhaal van een merk of talent, breng de juiste mensen samen en begeleid het creatieve proces tot de uiteindelijke realisatie.</p>
-    <div class="ex-block"><div class="sub">Voorbeelden</div><ul class="projects"><li><b>Vincent Banić</b><span>Creatieve videocontent</span><span class="src b">New Kith</span></li><li><b>Club Tuesday</b><span>Concept mee ontwikkeld met Jenna Peij</span><span class="src b">New Kith</span></li><li><b>Yoroi</b><span>Socialmediastrategie</span><span class="src t">TROUF</span></li></ul></div>
+    <div class="ex-block"><div class="sub">Voorbeelden</div><ul class="projects"><li><b>Vincent Banić</b><span>Creatieve videocontent</span><span class="src b">New Kith</span></li><li><b>Club Tuesday</b><span>Concept mee ontwikkeld met Jenna Peij</span><span class="src b">New Kith</span></li><li><b>Yoroi</b><span>Socialmediastrategie</span><span class="src t">TROUF</span></li></ul><div class="reels"><figure class="reel" role="button" aria-label="Club Tuesday, Geluid aan/uit"><video src="img/werk/clubtuesday-1.mp4" poster="img/werk/clubtuesday-1.jpg" muted loop playsinline preload="none"></video><figcaption><span>Club Tuesday</span><span class="snd">♪</span></figcaption></figure><figure class="reel" role="button" aria-label="Vincent Banić, Geluid aan/uit"><video src="img/werk/vincent-1.mp4" poster="img/werk/vincent-1.jpg" muted loop playsinline preload="none"></video><figcaption><span>Vincent Banić</span><span class="snd">♪</span></figcaption></figure><figure class="reel" role="button" aria-label="Club Tuesday, Geluid aan/uit"><video src="img/werk/clubtuesday-2.mp4" poster="img/werk/clubtuesday-2.jpg" muted loop playsinline preload="none"></video><figcaption><span>Club Tuesday</span><span class="snd">♪</span></figcaption></figure><figure class="reel" role="button" aria-label="Vincent Banić, Geluid aan/uit"><video src="img/werk/vincent-2.mp4" poster="img/werk/vincent-2.jpg" muted loop playsinline preload="none"></video><figcaption><span>Vincent Banić</span><span class="snd">♪</span></figcaption></figure></div></div>
   </details>
 </article><article class="xp" id="x4">
   <div class="xp-n">4</div>
@@ -772,5 +783,12 @@ document.querySelectorAll('.slides').forEach(function(box,b){
 </script>
 
 
-</body>
+<script>
+(function(){
+  var vs=[].slice.call(document.querySelectorAll('.reel video'));
+  if(!vs.length)return;
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){var v=e.target;if(e.isIntersecting){var p=v.play();if(p&&p.catch)p.catch(function(){})}else v.pause()})},{threshold:.4});
+  vs.forEach(function(v){io.observe(v);v.parentNode.addEventListener('click',function(){var on=v.muted;vs.forEach(function(o){o.muted=true;o.parentNode.querySelector('.snd').textContent='\u266A'});v.muted=!on;v.parentNode.querySelector('.snd').textContent=v.muted?'\u266A':'\u275A\u275A';if(!v.muted){v.currentTime=0;v.play()}})});
+})();
+</script></body>
 </html>
