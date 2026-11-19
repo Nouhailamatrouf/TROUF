@@ -578,15 +578,17 @@ body{--tf:"Gloock",Georgia,serif;--ts:.84}
 <meta property="og:description" content="Talent management, influencer marketing, brand partnerships, creative concepts and events.">
 <meta property="og:image" content="img/portret-studio-kleur.jpg">
 <style>
-/* hero optie E: kaart met grote foto, smalle zebrarand */
-.hero.vE{padding:26px 0!important;background:url(img/zebra-kaart.jpg) center/cover;position:relative;overflow:hidden}
-.hero.vE::before{content:"";position:absolute;inset:0;background:rgba(42,14,10,.4)}
-.hero.vE .wrap{max-width:1400px}
-.vE-card{position:relative;display:grid;grid-template-columns:1.3fr 1fr;background:var(--bg);border-radius:18px;overflow:hidden;box-shadow:0 50px 80px -40px rgba(0,0,0,.7);border:10px solid #3d0f0b}
-.vE-ph{margin:0;min-height:min(74vh,700px);position:relative}.vE-ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 22%}
-.vE-txt{padding:52px 50px;display:flex;flex-direction:column;justify-content:center}
-.vE .brand{border:0!important;margin:0!important;padding:0!important}.vE .brand img{width:min(380px,100%);margin:0!important}
-@media(max-width:860px){.hero.vE{padding:12px 0!important}.vE-card{grid-template-columns:1fr;border-width:7px}.vE-ph{min-height:0;height:64vh}.vE-txt{padding:28px 20px 32px}}
+/* hero optie H: typografisch, zonder foto */
+.hero.vH{background:#3d0f0b;color:#f6ece2;text-align:center;padding:90px 0 0!important;position:relative}
+.vH-k{font:400 11px "Cutive Mono",monospace;letter-spacing:.3em;text-transform:uppercase;color:rgba(246,236,226,.65)}
+.vH .brand{display:block!important;border:0!important;margin:26px auto 8px!important;padding:0!important}.hero.vH h1.brand{display:block!important;width:100%;text-align:center;letter-spacing:0!important}.hero.vH h1.brand img{display:block!important;width:min(900px,90vw)!important;margin:0 auto!important}
+.vH .sub-brand{color:#f6ece2!important;margin:20px auto 34px!important}
+.vH-svc{list-style:none;padding:0;margin:0 auto 44px;display:flex;justify-content:center;flex-wrap:wrap;gap:0;font:400 12px "Cutive Mono",monospace;letter-spacing:.24em;text-transform:uppercase;color:rgba(246,236,226,.8)}
+.vH-svc li{padding:0 18px}.vH-svc li+li{border-left:1px solid rgba(246,236,226,.3)}
+.vH .ctas{justify-content:center}
+.vH .ctas .btn{border:1px solid #f6ece2!important;color:#f6ece2!important;background:transparent!important}.vH .ctas .btn.solid{background:#f6ece2!important;color:#3d0f0b!important}
+.vH-z{height:90px;margin-top:80px;background:url(img/zebra-kaart.jpg) center/1400px auto;border-top:8px solid #3d0f0b}
+@media(max-width:760px){.hero.vH{padding-top:52px!important}.vH-k{font-size:10px;letter-spacing:.2em;line-height:1.7;display:block;padding:0 10px}.hero.vH h1.brand{margin-top:18px!important}.vH-svc{flex-direction:column;gap:4px;margin-bottom:36px}.vH-svc li{padding:4px 0}.vH-svc li+li{border-left:0}.vH-z{height:60px;margin-top:50px}}
 </style>
 </head>
 <body>
@@ -597,17 +599,13 @@ body{--tf:"Gloock",Georgia,serif;--ts:.84}
   <nav><a href="#over">About</a><a href="#expertise">Expertise</a><a href="#events">Events</a><a href="#talent">Talent</a><a href="#contact">Contact</a><span class="lang"><a href="index.html">NL</a><a href="en.html" aria-current="page">EN</a></span></nav>
 </div></div>
 
-<header class="hero vE" id="top"><div class="wrap">
-  <div class="vE-card">
-    <figure class="vE-ph"><img src="img/hero-portret.jpg" alt="Nouhaila Matrouf, founder of TROUF"></figure>
-    <div class="vE-txt">
-      <h1 class="brand"><img src="img/trouf-logo.svg" alt="TROUF"></h1>
-      <p class="sub-brand">Talent &amp; brands, built on community.</p>
-      <p class="lead">I help talent, brands and organisations grow, from strategy and concept to hands-on execution.</p>
-      <div class="ctas"><a class="btn solid" href="#contact">Work with me</a><a class="btn" href="#expertise">Discover my expertise</a></div>
-    </div>
-  </div>
-</div></header>
+<header class="hero vH" id="top"><div class="wrap">
+  <span class="vH-k">Talent management &amp; brand partnerships · Belgium</span>
+  <h1 class="brand"><img src="img/trouf-logo-licht.svg" alt="TROUF"></h1>
+  <p class="sub-brand">Talent &amp; brands, built on community.</p>
+  <ul class="vH-svc"><li>Talent management</li><li>Brand partnerships</li><li>Creative concepts</li><li>Events</li></ul>
+  <div class="ctas"><a class="btn solid" href="#contact">Work with me</a><a class="btn" href="#expertise">Discover my expertise</a></div>
+</div><div class="vH-z" aria-hidden="true"></div></header>
 
 <div class="ticker" aria-hidden="true"><div class="ticker-track"><span>Takeaway.com</span><i>✦</i><span>Jumbo</span><i>✦</i><span>Skechers</span><i>✦</i><span>WECANDANCE</span><i>✦</i><span>Vier Antwerp</span><i>✦</i><span>Voodoo Village</span><i>✦</i><span>Noare</span><i>✦</i><span>Yoroi</span><i>✦</i><span>La Vie En Roose</span><i>✦</i><span>Alline</span><i>✦</i><span>Mobilityl</span><i>✦</i><span>Takeaway.com</span><i>✦</i><span>Jumbo</span><i>✦</i><span>Skechers</span><i>✦</i><span>WECANDANCE</span><i>✦</i><span>Vier Antwerp</span><i>✦</i><span>Voodoo Village</span><i>✦</i><span>Noare</span><i>✦</i><span>Yoroi</span><i>✦</i><span>La Vie En Roose</span><i>✦</i><span>Alline</span><i>✦</i><span>Mobilityl</span><i>✦</i></div></div>
 
